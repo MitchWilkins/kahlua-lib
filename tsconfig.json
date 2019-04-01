@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "kahlua-lib": [
+        "dist/kahlua-lib"
+      ],
+      "kahlua-lib/*": [
+        "dist/kahlua-lib/*"
+      ]
+    }
   }
 }

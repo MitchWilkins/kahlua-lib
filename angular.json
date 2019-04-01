@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "kahlua-lib": {
+      "root": "projects/kahlua-lib",
+      "sourceRoot": "projects/kahlua-lib/src",
+      "projectType": "library",
+      "prefix": "kh",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/kahlua-lib/tsconfig.lib.json",
+            "project": "projects/kahlua-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kahlua-lib/src/test.ts",
+            "tsConfig": "projects/kahlua-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/kahlua-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kahlua-lib/tsconfig.lib.json",
+              "projects/kahlua-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Kahlua"
