@@ -1,0 +1,21 @@
+{
+  "name": "kahlua-lib",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  },
+  "main": "bundles/kahlua-lib.umd.js",
+  "module": "fesm5/kahlua-lib.js",
+  "es2015": "fesm2015/kahlua-lib.js",
+  "esm5": "esm5/kahlua-lib.js",
+  "esm2015": "esm2015/kahlua-lib.js",
+  "fesm5": "fesm5/kahlua-lib.js",
+  "fesm2015": "fesm2015/kahlua-lib.js",
+  "typings": "kahlua-lib.d.ts",
+  "metadata": "kahlua-lib.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
